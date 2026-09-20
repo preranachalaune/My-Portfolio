@@ -11,6 +11,16 @@ function Projects() {
       live: "https://doctor-appointment-system-o0cexu0av.vercel.app/",
       github: "https://github.com/preranachalaune/DoctorAppointmentSystem",
     },
+
+    {
+      title: "StayNest - Hotel Booking System",
+      description:
+        "A modern hotel room booking website where users can explore hotels, view hotel details, book rooms, manage their bookings and access their dashboard.",
+      tech: ["React", "Vite", "JavaScript", "React Router", "CSS"],
+      icon: "🏨",
+      live: "https://stay-nest-yoh3.vercel.app/",
+      github: "https://github.com/preranachalaune/StayNest",
+    },
   ];
 
   return (
