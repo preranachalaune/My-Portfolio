@@ -1,73 +1,60 @@
 function Footer() {
   return (
     <footer className="bg-slate-950 border-t border-slate-800 text-white">
-      <div className="max-w-6xl mx-auto px-6 py-10">
+      <div className="max-w-6xl mx-auto px-6 py-12">
 
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        {/* Main Footer */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
 
-          {/* Logo */}
-          <div>
-            <h2 className="text-2xl font-bold">
-              Prerana<span className="text-indigo-500">.</span>
+          {/* Brand */}
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl font-bold">
+              Prerana Chalaune
+              <span className="text-indigo-500">.</span>
             </h2>
 
-            <p className="mt-2 text-sm text-slate-400">
-              BIT Student & Aspiring Frontend Developer
+            <p className="mt-3 text-slate-400 text-sm max-w-sm">
+              BIT Student & Aspiring Frontend Developer passionate
+              about creating modern and user-friendly web experiences.
             </p>
           </div>
 
-          {/* Navigation */}
-          <div className="flex flex-wrap justify-center gap-6 text-sm">
-
-            <a
-              href="#home"
-              className="text-slate-400 hover:text-white transition"
-            >
-              Home
-            </a>
-
-            <a
-              href="#about"
-              className="text-slate-400 hover:text-white transition"
-            >
-              About
-            </a>
-
-            <a
-              href="#skills"
-              className="text-slate-400 hover:text-white transition"
-            >
-              Skills
-            </a>
-
-            <a
-              href="#projects"
-              className="text-slate-400 hover:text-white transition"
-            >
-              Projects
-            </a>
-
-            <a
-              href="#contact"
-              className="text-slate-400 hover:text-white transition"
-            >
-              Contact
-            </a>
-
-          </div>
+          {/* GitHub */}
+          <a
+            href="https://github.com/preranachalaune"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-3 px-5 py-3
+            rounded-lg border border-slate-700
+            text-slate-300 hover:text-white
+            hover:border-indigo-500 hover:bg-indigo-500/10
+            transition duration-300"
+          >
+            <span className="font-semibold">GitHub</span>
+            <span>↗</span>
+          </a>
 
         </div>
 
+        {/* Divider */}
+        <div className="my-8 border-t border-slate-800"></div>
+
         {/* Bottom */}
-        <div className="mt-8 pt-6 border-t border-slate-800 text-center">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-3">
+
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} Prerana. All rights reserved.
+            © {new Date().getFullYear()} Prerana Chalaune. All rights reserved.
           </p>
+
+          <p className="text-sm text-slate-500">
+            Designed & Built with React
+          </p>
+
         </div>
 
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

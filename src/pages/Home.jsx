@@ -1,9 +1,9 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <section
-      id="home"
       className="min-h-screen flex items-center justify-center px-6 pt-24 pb-16 relative overflow-hidden"
     >
       {/* Background Glow */}
@@ -20,8 +20,9 @@ function Home() {
             Hello, I'm 👋
           </p>
 
+          {/* Full Name */}
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-            Prerana
+            Prerana Chalaune
           </h1>
 
           <h2 className="text-2xl md:text-4xl font-semibold text-slate-300 mb-6">
@@ -37,19 +38,23 @@ function Home() {
           {/* BUTTONS */}
           <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8">
 
-            <a
-              href="#projects"
-              className="px-7 py-3 rounded-full bg-indigo-600 hover:bg-indigo-500 hover:scale-105 transition duration-300 font-medium"
+            <Link
+              to="/projects"
+              className="px-7 py-3 rounded-full bg-indigo-600
+              hover:bg-indigo-500 hover:scale-105
+              transition duration-300 font-medium"
             >
               View My Projects
-            </a>
+            </Link>
 
-            <a
-              href="#contact"
-              className="px-7 py-3 rounded-full border border-slate-600 hover:border-indigo-400 hover:text-indigo-400 hover:scale-105 transition duration-300 font-medium"
+            <Link
+              to="/contact"
+              className="px-7 py-3 rounded-full border border-slate-600
+              hover:border-indigo-400 hover:text-indigo-400
+              hover:scale-105 transition duration-300 font-medium"
             >
               Contact Me
-            </a>
+            </Link>
 
           </div>
 
@@ -62,7 +67,8 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Prerana GitHub"
-              className="text-slate-400 hover:text-white hover:-translate-y-1 transition duration-300"
+              className="text-slate-400 hover:text-white
+              hover:-translate-y-1 transition duration-300"
             >
               <FaGithub />
             </a>
@@ -73,7 +79,8 @@ function Home() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Prerana Instagram"
-              className="text-slate-400 hover:text-pink-400 hover:-translate-y-1 transition duration-300"
+              className="text-slate-400 hover:text-pink-400
+              hover:-translate-y-1 transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -91,14 +98,16 @@ function Home() {
             <div className="absolute inset-0 bg-indigo-600 rounded-full blur-2xl opacity-30"></div>
 
             {/* Image */}
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-indigo-500 shadow-2xl">
-
+            <div className="relative w-64 h-64 md:w-80 md:h-80
+              rounded-full overflow-hidden border-4 border-indigo-500
+              shadow-2xl"
+            >
               <img
                 src="/profile.jpeg"
-                alt="Prerana Profile"
-                className="w-full h-full object-cover hover:scale-105 transition duration-500"
+                alt="Prerana Chalaune Profile"
+                className="w-full h-full object-cover
+                hover:scale-105 transition duration-500"
               />
-
             </div>
 
           </div>

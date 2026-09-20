@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Skills", path: "/skills" },
+    { name: "Projects", path: "/projects" },
+    { name: "Resume", path: "/resume" },
+    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -19,28 +21,28 @@ function Navbar() {
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}
-          <a
-            href="#home"
+          <Link
+            to="/"
             onClick={() => setIsOpen(false)}
             className="text-2xl font-bold text-white hover:text-indigo-400 transition duration-300"
           >
             Prerana<span className="text-indigo-500">.</span>
-          </a>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
 
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.path}
                 className="relative text-slate-300 hover:text-indigo-400 transition duration-300 font-medium group"
               >
                 {item.name}
 
                 {/* Hover Line */}
                 <span className="absolute left-0 -bottom-2 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </Link>
             ))}
 
           </div>
@@ -64,14 +66,14 @@ function Navbar() {
             <div className="flex flex-col gap-1 pt-4">
 
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.path}
                   onClick={() => setIsOpen(false)}
                   className="text-slate-300 hover:text-indigo-400 hover:bg-slate-900/60 rounded-lg transition duration-300 font-medium py-3 px-4"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
 
             </div>
