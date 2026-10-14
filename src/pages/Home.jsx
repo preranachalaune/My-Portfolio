@@ -103,8 +103,8 @@ function Home() {
               shadow-2xl"
             >
               <img
-                src="/profile.jpeg"
-                alt="Prerana Chalaune Profile"
+                src="/avatar.jpeg"
+                alt="Prerana Chalaune"
                 className="w-full h-full object-cover
                 hover:scale-105 transition duration-500"
               />

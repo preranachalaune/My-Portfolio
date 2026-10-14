@@ -18,11 +18,13 @@ function Resume() {
         <section className="relative overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-900 to-indigo-950/40 p-7 sm:p-10 md:p-12 shadow-2xl">
 
           <div className="absolute -top-24 -right-24 w-64 h-64 bg-indigo-600/20 rounded-full blur-3xl"></div>
+
           <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl"></div>
 
           <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
 
             <div>
+
               <p className="text-indigo-400 font-semibold tracking-widest text-sm uppercase mb-3">
                 Resume
               </p>
@@ -43,19 +45,25 @@ function Resume() {
                 responsive websites and creating user-friendly web
                 experiences.
               </p>
+
             </div>
 
             <div className="shrink-0">
+
               <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden border-2 border-indigo-500/60 shadow-xl shadow-indigo-950/40">
+
                 <img
-                  src="/profile.jpeg"
+                  src="/avatar.jpeg"
                   alt="Prerana Chalaune"
                   className="w-full h-full object-cover"
                 />
+
               </div>
+
             </div>
 
           </div>
+
         </section>
 
 
@@ -63,30 +71,41 @@ function Resume() {
         <section className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
 
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 hover:border-indigo-500/60 transition">
+
             <p className="text-xs uppercase tracking-wider text-slate-500">
               Location
             </p>
+
             <p className="text-slate-200 mt-2 font-medium">
               Kathmandu, Nepal
             </p>
+
           </div>
 
+
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 hover:border-indigo-500/60 transition">
+
             <p className="text-xs uppercase tracking-wider text-slate-500">
               Education
             </p>
+
             <p className="text-slate-200 mt-2 font-medium">
               Bachelor in Information Technology
             </p>
+
           </div>
 
+
           <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-5 hover:border-indigo-500/60 transition">
+
             <p className="text-xs uppercase tracking-wider text-slate-500">
               Focus
             </p>
+
             <p className="text-slate-200 mt-2 font-medium">
               Frontend Development
             </p>
+
           </div>
 
         </section>
@@ -96,10 +115,13 @@ function Resume() {
         <section className="mt-10 rounded-3xl border border-slate-800 bg-slate-900/50 p-7 sm:p-9">
 
           <div className="flex items-center gap-3 mb-6">
+
             <span className="w-10 h-1 rounded-full bg-indigo-500"></span>
+
             <h2 className="text-2xl sm:text-3xl font-bold">
               Profile
             </h2>
+
           </div>
 
           <p className="text-slate-400 leading-8">
@@ -118,10 +140,13 @@ function Resume() {
         <section className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/50 p-7 sm:p-9">
 
           <div className="flex items-center gap-3 mb-8">
+
             <span className="w-10 h-1 rounded-full bg-indigo-500"></span>
+
             <h2 className="text-2xl sm:text-3xl font-bold">
               Education
             </h2>
+
           </div>
 
           <div className="relative pl-7 border-l-2 border-indigo-500/50">
@@ -149,23 +174,30 @@ function Resume() {
         <section className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/50 p-7 sm:p-9">
 
           <div className="flex items-center gap-3 mb-8">
+
             <span className="w-10 h-1 rounded-full bg-indigo-500"></span>
+
             <h2 className="text-2xl sm:text-3xl font-bold">
               Technical Skills
             </h2>
+
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
             {skills.map((skill) => (
+
               <div
                 key={skill}
                 className="group rounded-xl border border-slate-700 bg-slate-800/50 p-4 text-center hover:border-indigo-500 hover:bg-indigo-500/10 transition duration-300"
               >
+
                 <p className="text-slate-300 group-hover:text-indigo-300 font-medium transition">
                   {skill}
                 </p>
+
               </div>
+
             ))}
 
           </div>
@@ -177,18 +209,25 @@ function Resume() {
         <section className="mt-8 rounded-3xl border border-slate-800 bg-slate-900/50 p-7 sm:p-9">
 
           <div className="flex items-center gap-3 mb-8">
+
             <span className="w-10 h-1 rounded-full bg-indigo-500"></span>
+
             <h2 className="text-2xl sm:text-3xl font-bold">
               Projects
             </h2>
+
           </div>
+
 
           <div className="grid md:grid-cols-2 gap-5">
 
-            {/* Project 1 */}
+
+            {/* Project 1 - StayNest */}
+
             <div className="group rounded-2xl border border-slate-700 bg-slate-800/40 p-6 hover:border-indigo-500/70 hover:-translate-y-1 transition duration-300">
 
               <div className="flex items-center justify-between gap-3">
+
                 <h3 className="text-xl font-semibold">
                   StayNest
                 </h3>
@@ -196,6 +235,7 @@ function Resume() {
                 <span className="text-xs px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                   React
                 </span>
+
               </div>
 
               <p className="text-slate-400 leading-7 mt-4">
@@ -207,13 +247,37 @@ function Resume() {
                 React.js • Tailwind CSS • JavaScript
               </p>
 
+              <div className="flex gap-3 mt-6">
+
+                <a
+                  href="https://stay-nest-yoh3.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition text-sm font-medium"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/preranachalaune/StayNest"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center px-4 py-2 rounded-lg border border-slate-700 hover:border-indigo-400 hover:text-indigo-400 transition text-sm font-medium"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
 
 
-            {/* Project 2 */}
+            {/* Project 2 - Doctor Appointment */}
+
             <div className="group rounded-2xl border border-slate-700 bg-slate-800/40 p-6 hover:border-indigo-500/70 hover:-translate-y-1 transition duration-300">
 
               <div className="flex items-center justify-between gap-3">
+
                 <h3 className="text-xl font-semibold">
                   Doctor Appointment System
                 </h3>
@@ -221,6 +285,7 @@ function Resume() {
                 <span className="text-xs px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
                   Web App
                 </span>
+
               </div>
 
               <p className="text-slate-400 leading-7 mt-4">
@@ -232,7 +297,81 @@ function Resume() {
                 React.js • JavaScript • CSS
               </p>
 
+              <div className="flex gap-3 mt-6">
+
+                <a
+                  href="https://doctor-appointment-system-o0cexu0av.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition text-sm font-medium"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/preranachalaune/DoctorAppointmentSystem"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center px-4 py-2 rounded-lg border border-slate-700 hover:border-indigo-400 hover:text-indigo-400 transition text-sm font-medium"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
+
+            {/* Project 3 - ShopEase */}
+
+            <div className="group rounded-2xl border border-slate-700 bg-slate-800/40 p-6 hover:border-indigo-500/70 hover:-translate-y-1 transition duration-300">
+
+              <div className="flex items-center justify-between gap-3">
+
+                <h3 className="text-xl font-semibold">
+                  ShopEase
+                </h3>
+
+                <span className="text-xs px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                  E-Commerce
+                </span>
+
+              </div>
+
+              <p className="text-slate-400 leading-7 mt-4">
+                Responsive e-commerce website with product browsing,
+                search, category and brand filters, cart, checkout and
+                dummy payment functionality.
+              </p>
+
+              <p className="text-sm text-indigo-400 mt-5">
+                React.js • Vite • JavaScript • React Router • CSS
+              </p>
+
+              <div className="flex gap-3 mt-6">
+
+                <a
+                  href="https://ecommerce-website-kappa-ashen.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-500 transition text-sm font-medium"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/preranachalaune/ecommerce-website"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center px-4 py-2 rounded-lg border border-slate-700 hover:border-indigo-400 hover:text-indigo-400 transition text-sm font-medium"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
 
           </div>
 
@@ -243,10 +382,13 @@ function Resume() {
         <section className="mt-8 rounded-3xl border border-slate-800 bg-gradient-to-r from-indigo-950/30 to-slate-900/50 p-7 sm:p-9">
 
           <div className="flex items-center gap-3 mb-6">
+
             <span className="w-10 h-1 rounded-full bg-indigo-500"></span>
+
             <h2 className="text-2xl sm:text-3xl font-bold">
               Career Objective
             </h2>
+
           </div>
 
           <p className="text-slate-400 leading-8">
@@ -264,6 +406,7 @@ function Resume() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
 
             <div>
+
               <h2 className="text-xl font-semibold">
                 Online Portfolio
               </h2>
@@ -271,6 +414,7 @@ function Resume() {
               <p className="text-slate-500 mt-2">
                 GitHub profile and development projects
               </p>
+
             </div>
 
             <a
