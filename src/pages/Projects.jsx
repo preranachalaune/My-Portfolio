@@ -1,3 +1,4 @@
+
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 function Projects() {
@@ -47,6 +48,25 @@ function Projects() {
         "https://ecommerce-website-kappa-ashen.vercel.app/",
       github:
         "https://github.com/preranachalaune/ecommerce-website",
+    },
+
+    {
+      title: "YouTube Explorer",
+      description:
+        "A video discovery web application where users can search for YouTube videos and explore video details using the YouTube Data API through RapidAPI.",
+      tech: [
+        "React",
+        "Vite",
+        "JavaScript",
+        "Node.js",
+        "Express.js",
+        "RapidAPI",
+      ],
+      icon: "▶️",
+      live:
+        "https://you-tube-explorer-frontend.vercel.app/",
+      github:
+        "https://github.com/preranachalaune/YouTube-Explorer",
     },
   ];
 
